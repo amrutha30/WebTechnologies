@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html><title>063.product</title>
+<head>
+    <script style="text/javascript">
+    function product_ele(a)
+    {
+     var b=a.length;
+     var c=new Array();
+        var i,j,k;
+        for(k=0;k<b;k++)
+            {
+                c[k]=1;
+            }
+    for(j=0;j<b;j++)
+    {    
+     for(i=0;i<b;i++)
+         {
+             if(i!=j)
+                 {
+                     c[j]*=a[i];
+                 }
+         }
+    }
+        document.write(c);
+    }
+    </script>
+    </head>
+    <body>
+        <script style="text/javascript">
+       product_ele([12,12,8,-2]);
+      </script>
+    </body>
+</html>
